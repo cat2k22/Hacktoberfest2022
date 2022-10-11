@@ -22,7 +22,7 @@ const projects=[
         is_static:true
     },
     {
-        name:"Simple Web Page",
+        name:"Simple Web page",
         author:"unknown2k21",
         is_static:false
     },
