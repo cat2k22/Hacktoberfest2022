@@ -1,0 +1,54 @@
+<!DOCTYPE>
+<html>
+<title>login</title>
+<head>
+    <script type="text/javascript" src="bootstrapvalidator-0.5.2/vendor/jquery/jquery-1.10.2.min.js"></script>
+    <script type="text/javascript" src="bootstrapvalidator-0.5.2/vendor/bootstrap/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="bootstrapvalidator-0.5.2/dist/js/bootstrapValidator.js"></script>
+</head>
+<h1><CENTER>LOGIN FORM</h1></CENTER>
+<body topmargin="0" leftmargin="0" bgcolor="#FFFFCC">
+<CENTER>
+<form id="defaultForm" method="post" class="form-horizontal" action="bg.php">
+<h2><FONT SIZE=3 COLOR="BLACK" bgcolor="black">
+<div class="form-group">
+<p align="center"><font color="blue"><td><label class="col-lg-3 control-label">USERNAME</label></font>
+                                <div class="col-lg-4">
+									<input type="text" required name="txtuser"/></td></p>
+</div>
+</div>
+<div class="form-group">
+<p align="center"><font color="blue"><td><label class="col-lg-3 control-label">PASSWORD</label></font>
+                                <div class="col-lg-4">
+									<input type="password" required name="txtpass"/></td></br></p>
+									</h2>
+									</div>
+									</div>
+									<div class="form-group">
+             <h4><button class="btn btn-primary" type="submit">SUBMIT</button>
+			 </div>
+</form></CENTER></h4>
+<script type="text/javascript">
+$(document).ready(function() {
+    $('#abc').bootstrapValidator({
+        fields: {
+            txtuser: {
+                validators: {
+                    notEmpty: {
+                        message: 'The name is required and cannot be empty'
+                    }
+                }
+            },
+            txtpass: {
+                validators: {
+                    notEmpty: {
+                        message: 'The password is required and cannot be empty'
+                    }
+                }
+            }
+        }
+    });
+});
+</script>
+</body>
+</html>
