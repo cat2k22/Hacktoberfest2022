@@ -1,0 +1,134 @@
+.projects{
+    display: flex;
+    flex-direction: column;
+    color: white;
+    padding: 3rem 0;
+    
+    margin: 0 auto;
+    .container{
+        width: 70%;
+        margin: auto;
+        h3{
+            font-size: 30px;
+            color: yellow;
+            font-weight: 200;
+            margin-bottom: -1rem;
+        }
+        h1.title{
+            font-size: 60px;
+            position: relative;
+            margin-bottom: 10rem;
+            text-transform: uppercase;
+            letter-spacing: 3px;
+            &::after{
+                content: '';
+                position: absolute;
+                bottom: 0;
+                left: 0;
+                width: 500px;
+                height: 5px;
+                background: yellow;
+                border-radius: 1rem;
+            }
+        }
+        .projects-wrapper{
+            .project{
+                width: 100%;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                margin: 3rem 0;
+                position: relative;
+                h1{
+                    // color: yellow;
+                    width: 100%;
+                    font-size: 3rem;
+                }
+                .card{
+                    width: 60%;
+                    position: relative;
+                    overflow: hidden;
+
+                    &::before{
+                        content: '';
+                        position: absolute;
+                        bottom: -1px;
+                        left: 0;
+                        width: 100%;
+                        height: 6px;
+                        background: white;
+                        border: 1px solid white;
+
+                        z-index: 5;
+                    }
+
+                    &::after{
+                        content: '';
+                        position: absolute;
+                        inset: 0;
+                        border: 10px solid white;
+                        background: transparent;
+                        pointer-events: none;
+                        z-index: 6;
+                    }
+
+                    &:hover .overview{
+                        transform: translate(0);
+                    }
+                    img{
+                        width: 100%;
+                        height: 100%;
+                    }
+                    .overview{
+                        position: absolute;
+                        top: -10px;
+                        left: -10px;
+                        width: 100%;
+                        height: 100%;
+                        
+
+                        margin: 10px;
+                        background: rgba(0, 0, 0, .7);
+                        backdrop-filter: blur(10px);
+                
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: center;
+                        align-items: center;
+
+                        transform: translate(-100%);
+                        transition: .3s ease-in;
+                        h1{
+                            all: unset;
+                            font-size: 50px;
+                            text-align: center;
+                        }
+                        a{
+                            text-decoration: none;
+                            display: inline-block;
+                            margin-right: 20px;
+                            
+                            i{
+                                font-size: 40px;
+                                color: #222;
+                                border: 5px solid transparent;
+                                background: yellow;
+                                border-radius: 50%;
+                                padding: 1rem;
+
+                                transition: .5s ease-in-out;
+                            }
+                            &:hover > i{
+                                background: $lighter;
+                                transform: scale(1.1);
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    
+    }
+}
+
+
