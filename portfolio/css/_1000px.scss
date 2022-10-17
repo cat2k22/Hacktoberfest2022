@@ -1,0 +1,65 @@
+@media screen and (max-width : 1000px){
+    header{
+        .container{
+            nav{
+                .links{
+                    .container{
+                        li{
+                            margin-right: 4rem;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+
+    .contact{
+        .container{
+            .header{
+                h3{
+                    font-size: 25px;
+                }
+                h1{
+                    font-size: 50px;
+                    text-align: center;
+                }
+            }
+            .wrapper{
+                font-size: 25px;
+                .grp{
+                    i{
+                        font-size: 40px;
+                    }
+                }
+               }
+               footer{
+                p{
+                    font-size: 4rem;
+
+                    position: relative;
+                    &::after{
+                        left: 50%;
+                        width: 250px;
+                    }
+                }
+                a{
+
+                    
+                    i{
+                    }
+                }
+               }
+        }
+    }
+
+    .about{
+        .container{
+            .text{
+                h3{
+                    font-size: 25px;
+                }
+            }
+        }
+    }
+}

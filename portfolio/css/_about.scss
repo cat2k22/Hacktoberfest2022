@@ -1,0 +1,69 @@
+.about{
+    position: relative;
+    display: flex;
+    font-size: 2em;
+    min-height: 100vh;
+
+    .container{
+       width: 70%;
+       margin: auto;
+        .text{
+            h3{
+                font-size: 30px;
+                color: yellow;
+                font-weight: 200;
+                margin-bottom: -1rem;
+            }
+            h1{
+                font-size: 60px;
+                position: relative;
+                margin-bottom: 4rem;
+                text-transform: uppercase;
+                letter-spacing: 3px;
+                &::after{
+                    content: '';
+                    position: absolute;
+                    bottom: 0;
+                    left: 0;
+                    width: 300px;
+                    height: 5px;
+                    background: yellow;
+                    border-radius: 1rem;
+                }
+            }
+            p{
+                font-size: 25px;
+                margin-bottom: 2rem;
+                width: 80%;
+            }
+        }
+
+        .skills{
+            width: 80%;
+            margin: 0 auto;
+            .wrapper{
+                display: grid;
+                grid-template-columns: repeat(4, 1fr);
+                justify-content: center;
+                gap: 3rem;
+                margin-top: 2rem;
+
+                div{
+                    font-size: 8vw;
+                    box-shadow:0 0 10px 2px rgba(0, 0, 0, .4) inset;
+                    color: white;
+                    padding: 3rem 3rem;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    border-radius: 1rem;
+                }
+            }
+            h2{
+                text-align: center;
+                color: yellow;
+                font-size: 50px;
+            }
+        }
+    }
+}

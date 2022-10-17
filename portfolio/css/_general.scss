@@ -1,0 +1,59 @@
+*, *::before, *::after{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    font-size: 62.5%;
+    scroll-behavior: smooth !important;
+}
+
+body{
+    min-height: 100vh;
+    width: 100vw !important;
+    max-width: 100vw !important;
+    background: $main;
+    font-family: "poppins", sans-serif;
+    color: #eee;
+
+    display: flex;
+    flex-direction: column;
+    overflow-x: hidden !important;
+}
+
+main, .about, .projects, .contact{
+    width: 100vw;
+    overflow-x: hidden;
+}
+
+.back-top{
+    text-decoration: none;
+    font-size: 2rem;
+    color: #222;
+    background: yellow;
+    border-radius: 50%;
+    width: 5rem;
+    height: 5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    bottom: 2%;
+    right: 2%;
+    box-shadow: 0 0 10px rgba($color: #000000, $alpha: 1.0);
+    transition: .4s ease-in-out;
+
+    opacity: 0;
+    pointer-events: none;
+    &:hover{
+        background: $lighter;
+        color: #111;
+        transform: translateY(-8px);
+    }
+}
+.back-top.active{
+    opacity: 1;
+    pointer-events: auto;
+}
+

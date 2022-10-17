@@ -1,0 +1,125 @@
+.contact{
+    position: relative;
+    display: flex;
+    font-size: 2em;
+    height: 100vh;
+
+    .container{
+       width: 70%;
+       margin: auto;
+
+       display: flex;
+       flex-direction: column;
+       align-items: center;
+       
+       .header{
+        margin: 0;
+        padding: 0;
+           h3{
+            font-size: 25px;
+            color: yellow;
+            font-weight: 200;
+            margin-bottom: -2rem;
+            }
+            h1{
+                font-size: 60px;
+                position: relative;
+                margin-bottom: 5rem;
+                text-transform: uppercase;
+                letter-spacing: 3px;
+                &::after{
+                    content: '';
+                    position: absolute;
+                    bottom: 0;
+                    left: 50%;
+                    transform: translateX(-50%);
+                    width: 330px;
+                    height: 5px;
+                    background: yellow;
+                    border-radius: 1rem;
+                }
+            }
+       }
+       .wrapper{
+        font-size: 30px;
+        .grp{
+            margin: 1rem 0;
+            text-align: center;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            i{
+                font-size: 50px;
+                margin-right: 1rem;
+            }
+        }
+       }
+       footer{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+
+        margin-top: 5rem;
+        p{
+            font-size: 5rem;
+            font-weight: 200;
+            color: white;
+            margin-bottom: 3rem;
+
+            
+            position: relative;
+            &::after{
+                content: '';
+                position: absolute;
+                bottom: 0;
+                left: 50%;
+                transform: translateX(-50%);
+                width: 330px;
+                height: 2px;
+                background: white;
+                border-radius: 1rem;
+            }
+        }
+        a{
+            width: fit-content;
+            text-decoration: none;
+            text-transform: uppercase;
+            font-weight: bold;
+            letter-spacing: 3px;
+            
+            background: yellow;
+            color: #222;
+            border-bottom-left-radius: 2rem;
+            border-bottom-right-radius: 2rem;
+            padding: 1.5rem 2rem;
+            
+            transition: .5s ease-in;
+            
+            i{
+                margin-left: .5rem;
+            }
+            
+            &:hover{
+                background: white;
+                color: #222;
+                font-weight: bold;
+            }
+        }
+       }
+    }
+    .footer{
+        position: absolute;
+        bottom: 30px;
+        i{
+            color: yellow;
+        }
+        a{
+            color: white;
+            transition: .3s ease-in;
+            &:hover{
+                color: yellow;
+            }
+        }
+    }
+}

@@ -1,0 +1,105 @@
+@media screen and (max-width : 850px){
+
+    header{
+        .container{
+            nav{
+                    .burger{
+                        display: block;
+                    }
+                    .active{
+                        color: white;
+                        position: fixed;
+                        &:hover{
+                            color: yellow;
+                        }
+                    }
+                    .links{
+                        background: rgba(0, 0, 0, .5);
+                        backdrop-filter: blur(10px);
+                
+                        position: fixed;
+                        top: 0;
+                        left: 0;
+                        height: 100vh;
+                        width: 100%;
+        
+                        color: white;
+                
+                        display: flex;
+                
+                        transform: translateX(-100%);
+                
+                        transition: .8s cubic-bezier(1,-0.06,.33,.88);
+                
+                        z-index: 2;
+                        .container{
+                            margin: auto;
+                            display: flex;
+                            flex-direction: column;
+                            li{
+                                text-align: center;
+                                margin: 8rem 0;
+                                a{
+                                    color: white;
+                                    text-decoration: none;
+                                    font-size: 4rem;
+                
+                                    transition: .3s ease-in-out;
+                                    &:hover{
+                                        color: yellow;
+                                    }
+                                    &::after{
+                                        background: yellow;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                    .show{
+                        transform: translateX(0);
+                    }
+            }
+        }
+    }
+
+    main{
+        .container{
+            .text{
+                #h2{
+                    font-size: 5vw;
+                }
+                #h1{
+                    font-size: 7vw;
+                }
+                a{
+                    font-size: 3.5vw;
+                }
+            }
+        }
+    }
+
+    .about{
+        .container{
+            .text{
+                p{
+                    width: 100%;
+                }
+            }
+            .skills{
+                width: 100%;
+                .wrapper{
+                    display: flex;
+                    flex-wrap: wrap;
+                    div{
+                        min-width: 130px;
+                    }
+                }
+            }
+        }
+    }
+
+    main .container, .about .container, .projects .container, .contact .container{
+        width: 90%;
+    }
+}
+

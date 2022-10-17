@@ -1,0 +1,55 @@
+footer{
+    display: flex;
+    height: 20vh;
+    padding: 1rem 0;
+    .container{
+        width: 95%;
+        margin: auto;
+        text-align: center;
+        h1{
+            margin-bottom: .5rem;
+            span{
+                color: $lighter;
+            }
+        }
+        .follow-grp{
+            span{
+                font-size: 1.5rem;
+                font-weight: 300;
+                text-transform: uppercase;
+                letter-spacing: 3px;
+                position: relative;
+                padding-bottom: 1rem;
+                &::after{
+                    content: '';
+                    position: absolute;
+                    bottom: 0;
+                    left: 50%;
+                    transform: translate(-50%);
+                    width: 5rem;
+                    height: 3px;
+                    background: white;
+                    margin-bottom: .5rem;
+    background: $second;
+
+                }
+            }
+            .icons{
+                font-size: 3rem;
+                display: flex;
+                justify-content: center;
+                gap: 3rem;
+                margin-top: 1rem;
+                a{
+                    text-decoration: none;
+                    color: white;
+                    transition: .3s ease-in-out;
+                    &:hover {
+                        color: $lighter;
+                        transform: translateY(-5px);
+                    }
+                }
+            }
+        }
+    }
+}

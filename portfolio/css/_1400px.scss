@@ -1,0 +1,75 @@
+@media screen and (max-width : 1400px){
+    
+
+    main{
+        .container{
+            flex-direction: column;
+            .text{
+                .grp{
+                    text-align: center;
+                  h2{
+                    font-size: 30px;
+                    margin: 0;
+                  }  
+                  h1{
+                    font-size: 50px;
+                  }
+                  a{
+                    margin-bottom: 2rem;
+                  }
+                }
+            }
+            .img{
+                max-width: 400px;
+            }
+        }
+    }
+
+    .about{
+        .container{
+            .text{
+                h3{}
+                h1{}
+                p{
+                    width: 90%;
+                }
+            }
+            .skills{
+
+                h2{
+                    font-size: 40px;
+                }
+            }
+        }
+    }
+
+    .projects{
+        .container{
+            h3{
+                font-size: 25px;
+            }
+            h1.title{
+                font-size: 60px;
+                &::after{
+                    content: '';
+                    position: absolute;
+                    bottom: 0;
+                    left: 0;
+                    width: 45%;
+                    height: 5px;
+                    background: yellow;
+                    border-radius: 1rem;
+                }
+            }
+            .projects-wrapper{
+                .project{
+                    .card{
+                        width: 100%;
+                    }
+                }
+            }
+        }
+    }
+
+}
+
